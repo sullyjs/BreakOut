@@ -416,7 +416,7 @@ function gameover () {
     }
 
     $('#message h2').textContent = 'GAME OVER';
-    $('#message p').textContent  = 'provided by CATBREAD';
+    $('#message h3').textContent  = 'provided by CATBREAD';
     $('#message p').textContent  = 'Click to retry';
     $('#message').className = 'gameover message message-shown';
 
