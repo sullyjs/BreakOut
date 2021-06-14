@@ -416,7 +416,8 @@ function gameover () {
     }
 
     $('#message h2').textContent = 'GAME OVER';
-    $('#message p').textContent  = 'Click to play again! \nbuy CATBREAD!';
+    $('#message p').textContent  = 'provided by CATBREAD';
+    $('#message p').textContent  = 'Click to retry';
     $('#message').className = 'gameover message message-shown';
 
     $('#highscore span').textContent = displayScore(highscore);
