@@ -415,9 +415,8 @@ function gameover () {
         localStorage.setItem('highscore', score);
     }
 
-    $('#message h2').textContent = 'GAME OVER';
-    $('#message h3').textContent  = 'provided by CATBREAD';
-    $('#message p').textContent  = 'Click to retry';
+    $('#message h2').textContent = 'GAME OVER: CLICK';
+    $('#message p').textContent  = 'Buy $CATBREAD';
     $('#message').className = 'gameover message message-shown';
 
     $('#highscore span').textContent = displayScore(highscore);
