@@ -183,7 +183,7 @@ var canvas  = $('#game'),
     context = canvas.getContext('2d');
 
 var paused = true,
-    speed = 3,
+    speed = 1.5,
     bricksMargin = 1,
     bricksWidth = 0,
     bricksHeight = 18,
@@ -425,7 +425,7 @@ function gameover () {
 function resetGame () {
     round = 1;
     score = 0;
-    lives = 5;
+    lives = 20;
 }
 
 function startGame () {
