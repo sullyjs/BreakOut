@@ -213,15 +213,15 @@ var soundInstance = 0,
 
 for (var s = 0; s < 5; s ++) {
     sound = document.createElement('audio');
-    sound.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/beep.mp3');
-    sounds.push(sound);
+    //sound.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/beep.mp3');
+    //sounds.push(sound);
 }
 
-music1 = document.createElement('audio');
-music1.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/start.mp3');
+//music1 = document.createElement('audio');
+//music1.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/start.mp3');
 
-music2 = document.createElement('audio');
-music2.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/gameover.mp3');
+//music2 = document.createElement('audio');
+//music2.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/gameover.mp3');
 
 window.requestAnimationFrame = window.requestAnimationFrame
     || window.mozRequestAnimationFrame
@@ -287,7 +287,7 @@ function detectCollision () {
      && ball.x >= player.x
      && ball.x <= player.x + player.w
     ) {
-        playSound();
+        //playSound();
         ball.speedY = -ball.speedY;
         ball.speedX = (ball.x - (player.x + player.w / 2)) * 0.25;
     }
@@ -302,7 +302,7 @@ function detectCollision () {
          && ball.x + ball.w >= brick.x
          && ball.x <= brick.x + brick.w
         ) {
-            playSound();
+            //playSound();
             ball.speedY = -ball.speedY;
 
             score ++;
@@ -394,7 +394,7 @@ function hideMessage () {
 }
 
 function ready () {
-    music1.play();
+    //music1.play();
 
     paused = true;
 
@@ -406,7 +406,7 @@ function ready () {
 }
 
 function gameover () {
-    music2.play();
+    //music2.play();
 
     paused = true;
 
