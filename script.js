@@ -213,15 +213,15 @@ var soundInstance = 0,
 
 for (var s = 0; s < 5; s ++) {
     sound = document.createElement('audio');
-    //sound.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/beep.mp3');
+    //sound.setAttribute('src', 'mp3');
     //sounds.push(sound);
 }
 
 //music1 = document.createElement('audio');
-//music1.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/start.mp3');
+//music1.setAttribute('src', 'mp3');
 
 //music2 = document.createElement('audio');
-//music2.setAttribute('src', 'https://jaysalvat.github.io/codepen-assets/breakout/gameover.mp3');
+//music2.setAttribute('src', 'mp3');
 
 window.requestAnimationFrame = window.requestAnimationFrame
     || window.mozRequestAnimationFrame
